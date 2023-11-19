@@ -5,39 +5,44 @@ import java.util.ArrayList;
 import cadence.stride.*;
 
 public class StrideFactory {
-    public ArrayList<StrideInterface> createStrides() {
-        ArrayList<StrideInterface> strides = new ArrayList<StrideInterface>();
+    public ArrayList<StrideImpl> createStrides() {
+        ArrayList<StrideImpl> strides = new ArrayList<StrideImpl>();
         strides.add(this.createJvType());
         strides.add(this.createJvArray());
         strides.add(this.createJvMap());
         strides.add(this.createJvRecord());
         strides.add(this.createJvRequest());
         strides.add(this.createJvStream());
+        strides.add(this.createJvCollector());
 
         return strides;
     }
 
-    private StrideInterface createJvType() {
+    private StrideImpl createJvType() {
         return new JvType();
     }
 
-    private StrideInterface createJvArray() {
+    private StrideImpl createJvArray() {
         return new JvArray();
     }
 
-    private StrideInterface createJvMap() {
+    private StrideImpl createJvMap() {
         return new JvMap();
     }
 
-    private StrideInterface createJvRecord() {
+    private StrideImpl createJvRecord() {
         return new JvRecord();
     }
 
-    private StrideInterface createJvRequest() {
+    private StrideImpl createJvRequest() {
         return new JvRequest();
     }
 
-    private StrideInterface createJvStream() {
+    private StrideImpl createJvStream() {
         return new JvStream();
+    }
+
+    private StrideImpl createJvCollector() {
+        return new JvCollector();
     }
 }

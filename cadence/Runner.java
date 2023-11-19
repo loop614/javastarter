@@ -1,7 +1,7 @@
 package cadence;
 
 import java.util.ArrayList;
-import cadence.stride.StrideInterface;
+import cadence.stride.StrideImpl;
 
 public class Runner {
     private final StrideFactory factory;
@@ -16,8 +16,8 @@ public class Runner {
             System.out.println("------------\n");
         }
 
-        ArrayList<StrideInterface> strides = this.factory.createStrides();
-        for (StrideInterface stride: strides) {
+        ArrayList<StrideImpl> strides = this.factory.createStrides();
+        for (StrideImpl stride: strides) {
             stride.printStrideStart();
             stride.run();
             stride.printStrideEnd();

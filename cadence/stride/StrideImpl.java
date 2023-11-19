@@ -1,6 +1,6 @@
 package cadence.stride;
 
-public interface StrideInterface {
+public interface StrideImpl {
     void run();
     void printStrideStart();
     void printStrideEnd();

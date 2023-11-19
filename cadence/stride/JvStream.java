@@ -3,7 +3,7 @@ package cadence.stride;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class JvStream extends AbstractStride implements StrideInterface {
+public class JvStream extends AbstractStride {
     @Override
     public void run() {
         IntStream.range(0, 3)
