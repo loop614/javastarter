@@ -5,3 +5,6 @@ run: Main.class
 
 Main.class: Main.java
 	javac -d dist Main.java
+
+clean:
+	rm -rf dist/

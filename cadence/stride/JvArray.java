@@ -1,8 +1,10 @@
 package cadence.stride;
 
 import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Stack;
 import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
 
 public class JvArray extends AbstractStride {
     @Override
@@ -40,7 +42,7 @@ public class JvArray extends AbstractStride {
     }
 
     private void queueExample() {
-        ArrayBlockingQueue<Character> blockingQueue = new ArrayBlockingQueue<Character>(3);
+        BlockingQueue<Character> blockingQueue = new ArrayBlockingQueue<Character>(3);
         blockingQueue.offer('a');
         blockingQueue.offer('b');
         blockingQueue.offer('c');
@@ -50,7 +52,7 @@ public class JvArray extends AbstractStride {
     }
 
     private void dequeExample() {
-        ArrayDeque<Number> deque = new ArrayDeque<Number>();
+        Deque<Number> deque = new ArrayDeque<Number>();
         deque.addFirst(1);
         deque.push(3);
         deque.addLast(2);

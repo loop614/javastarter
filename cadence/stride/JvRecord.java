@@ -2,7 +2,7 @@ package cadence.stride;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-public record JvRecord() implements StrideImpl {
+public record JvRecord() implements Stride {
     @Override
     public void run() {
         AtomicLong a = new AtomicLong();

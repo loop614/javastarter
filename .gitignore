@@ -1,5 +1,2 @@
-.idea/
-out/
 dist/
-*.class
-*.iml
+oss/

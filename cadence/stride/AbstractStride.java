@@ -1,6 +1,6 @@
 package cadence.stride;
 
-abstract public class AbstractStride implements StrideImpl {
+abstract public class AbstractStride implements Stride {
     @Override
     public void printStrideStart() {
         System.out.println("Running stride " + this.getClass().getSimpleName() + ":\n");
